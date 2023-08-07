@@ -52,8 +52,8 @@ public class BookController {
     }
 
     @DeleteMapping("/{id}")
-    public RequestEntity<Book> deleteBook(@PathVariable String ID){
+    public ResponseEntity<Book> deleteBook(@PathVariable String ID){
         bookService.deleteBook(ID);
-        return new RequestEntity<>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

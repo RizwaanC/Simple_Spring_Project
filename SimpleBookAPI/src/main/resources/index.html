@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Book Management</h1>
+
+<div id="book-form">
+    <h2>Add/Edit Book</h2>
+    <input type="hidden" id="book-id">
+    <label>Title:</label>
+    <input type="text" id="title">
+    <label>Author:</label>
+    <input type="text" id="author">
+    <label>ISBN:</label>
+    <input type="text" id="isbn">
+    <button id="save-btn">Save</button>
+</div>
+
+<div id="book-list">
+    <h2>Book List</h2>
+    <ul id="books">
+        <!-- Book items will be added here -->
+    </ul>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
